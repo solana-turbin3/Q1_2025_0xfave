@@ -21,4 +21,12 @@ pub mod escrow {
     pub fn make(ctx: Context<Make>, seed: u64, deposit: u64, receive: u64) -> Result<()> {
         instructions::make::make(ctx, seed, deposit, receive)
     }
+
+    pub fn take(ctx: Context<Take>) -> Result<()> {
+        instructions::take::take(ctx)
+    }
+
+    pub fn refund(ctx: Context<Refund>) -> Result<()> {
+        instructions::refund::refund(ctx)
+    }
 }
