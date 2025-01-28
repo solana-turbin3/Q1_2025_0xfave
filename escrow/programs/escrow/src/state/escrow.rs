@@ -10,10 +10,10 @@ pub struct Escrow {
     pub maker: Pubkey,
 
     /// The mint associated with the deposit token.
-    pub deposit_mint: Pubkey,
+    pub mint_a: Pubkey,
 
     /// The mint associated with the token to be received.
-    pub receive_mint: Pubkey,
+    pub mint_b: Pubkey,
 
     /// The amount of tokens to be received.
     pub receive_amount: u64,
